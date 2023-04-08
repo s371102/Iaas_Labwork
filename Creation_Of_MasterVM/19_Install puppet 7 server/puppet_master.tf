@@ -12,7 +12,7 @@ provider "openstack" {
 
 resource "openstack_compute_instance_v2" "puppet_master" {
     name = "puppet_master-AK"
-    image_name = "ubuntu-22.04"
+    image_name = "ubuntu-20.04"
     flavor_name = "l2.c2r4.100"
     key_pair = "VM170-Key"
     network {
